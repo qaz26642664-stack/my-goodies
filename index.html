@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>好物入口｜生活裡的好物，慢慢挑，自己選。</title>
+<meta name="description" content="精選生活好物與購物資訊。部分商品連結可能包含分潤連結。">
+<style>
+:root{--paper:#f7f5ec;--ink:#19332f;--sage:#6e8a7c;--line:#d7d9cd;--muted:#68756d;--white:#fffefa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+header,main,footer{max-width:1120px;margin:auto;padding:22px clamp(16px,4vw,42px)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.brand{font-weight:800;font-size:1.25rem;letter-spacing:.04em}.brand-mark{display:inline-grid;place-items:center;border:1.5px solid var(--ink);border-radius:50%;width:40px;height:40px;margin-right:8px}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:.92rem}
+.hero{padding:42px 0 28px}.eyebrow{letter-spacing:.16em;font-size:.78rem;font-weight:800;color:#65736a}.hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.25;margin:18px 0 20px;letter-spacing:.03em}.hero h1 span{display:block;color:var(--sage)}.hero p{color:#536258;max-width:650px}.notice{background:#e6ebdf;padding:14px 18px;border-radius:15px;color:#40584c;margin:24px 0;font-size:.92rem}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:30px 0 16px}.section-head h2{margin:0;font-size:1.65rem}.count{border:1px solid #c7cec2;border-radius:999px;padding:3px 12px;color:var(--muted);font-size:.85rem}
+.controls{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:18px}.search-wrap{display:flex;align-items:center;gap:10px;background:var(--white);border:1px solid #cbd2c7;border-radius:13px;padding:13px 16px}.search-wrap input{border:0;outline:0;background:transparent;width:100%;font:inherit;color:var(--ink)}
+.categories{display:flex;flex-wrap:wrap;gap:9px}.chip{border:1px solid #cbd2c7;border-radius:999px;padding:9px 16px;background:transparent;color:#52675b;cursor:pointer;font:inherit}.chip.active{background:var(--ink);border-color:var(--ink);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--white);display:flex;flex-direction:column;min-width:0}.photo{aspect-ratio:1/1;background:#ecebe2;display:grid;place-items:center;overflow:hidden;color:#829087}.photo img{width:100%;height:100%;object-fit:cover}.photo .placeholder{font-size:2.4rem}.card-body{padding:17px;display:flex;flex-direction:column;gap:8px;flex:1}.tag{font-size:.78rem;color:#667a6e}.card h3{font-size:1.08rem;margin:0;line-height:1.4}.reason{font-size:.91rem;color:#58665d;margin:0;flex:1}.price{font-size:1.22rem;font-weight:800;margin-top:3px}.price small{font-size:.75rem;font-weight:500;color:var(--muted)}.btn{display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--ink);color:white;text-decoration:none;padding:13px 15px;border-radius:10px;margin-top:6px;font-weight:700}.btn.disabled{opacity:.5;pointer-events:none}.fine{font-size:.78rem;color:#7b857b;margin:0}.empty{padding:34px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px;grid-column:1/-1}
+footer{border-top:1px solid var(--line);color:#65736a;font-size:.85rem;margin-top:45px;padding-bottom:36px}
+details.admin{margin-top:32px;border:1px solid var(--line);border-radius:16px;padding:16px;background:#f1f0e7}details.admin summary{cursor:pointer;font-weight:750} .admin p{font-size:.9rem;color:#59675e}.admin-row{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.admin button,.admin label.filebtn{border:1px solid #cbd2c7;background:white;color:var(--ink);border-radius:9px;padding:10px 13px;cursor:pointer;font:inherit;font-size:.9rem}.admin input[type=file]{max-width:100%}.admin textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:10px;padding:10px;font: .85rem ui-monospace,monospace}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:28px}nav a{margin-left:8px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr 1fr;gap:10px}.card-body{padding:12px}.card h3{font-size:.98rem}.reason{font-size:.84rem}.btn{font-size:.85rem;padding:11px}.section-head h2{font-size:1.4rem}nav{align-items:flex-start;flex-wrap:wrap}nav .links{width:100%;display:flex;justify-content:flex-end}nav a{margin-left:12px}}
+</style>
+</head>
+<body>
+<header>
+<nav><div class="brand"><span class="brand-mark">↗</span><span id="siteName">好物入口</span></div><div class="links"><a href="#products">推薦商品</a><a href="#about">使用說明</a><a href="#manage">管理商品</a></div></nav>
+<section class="hero"><div class="eyebrow">THOUGHTFULLY SHARED, FREELY CHOSEN</div><h1>生活裡的好物，<span>慢慢挑，自己選。</span></h1><p>把推薦理由與目的地說清楚。看見喜歡的商品，再自行前往蝦皮。</p><p>閱讀本站內容，不需要先點商品或購物。</p>
+<div class="notice"><strong>● 分潤揭露</strong>　透過本頁連結完成符合條件的購買，分享者可能獲得佣金。商品價格、庫存與優惠條件，請以蝦皮頁面為準。</div></section>
+</header>
+<main id="products">
+<div class="section-head"><h2>推薦清單</h2><span class="count" id="count">0 件商品</span></div>
+<div class="controls"><label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="搜尋商品或推薦關鍵字" aria-label="搜尋商品或推薦關鍵字"></label><div class="categories" id="categories"></div></div>
+<div class="grid" id="grid"></div>
+<section id="about"><div class="section-head"><h2>想先了解這個入口？</h2></div><p>這裡整理個人挑選的商品與推薦理由，商品資訊可能隨時變動。點擊「前往蝦皮查看商品」後，會另開蝦皮或商品提供者頁面。本站不保證商品品質、價格或庫存，請在購買前自行確認。</p></section>
+<details class="admin" id="manage"><summary>管理商品｜匯入、更新或備份商品清單</summary><p>商品資料保存在這個瀏覽器的本機儲存空間。若要公開給其他人看，請將網站部署到免費靜態網站服務；本機新增的資料不會自動同步到已部署網站。大量更新建議先編輯 CSV，再匯入並重新部署。</p>
+<div class="admin-row"><label class="filebtn">匯入 CSV <input id="csvFile" type="file" accept=".csv,text/csv" hidden></label><button id="exportBtn">匯出目前商品 CSV</button><button id="resetBtn">還原示範資料</button></div>
+<p><strong>CSV 欄位：</strong>name,category,price,reason,image_url,shopee_url,updated</p>
+<p>也可以在下方貼上 CSV 內容匯入（第一列請保留欄位名稱）。建議使用 UTF-8 編碼。</p><textarea id="csvText" placeholder="name,category,price,reason,image_url,shopee_url,updated"></textarea><div class="admin-row"><button id="importTextBtn">匯入貼上的 CSV</button><button id="downloadTemplateBtn">下載空白 CSV 範本</button></div><p id="adminStatus" role="status"></p></details>
+</main>
+<footer><div>清楚分享，自由前往。</div><p>分潤揭露：本站可能使用聯盟行銷／分潤連結，符合條件的購買可能為本站帶來佣金，通常不會因此增加你的購買價格。請以實際商品頁與平台規則為準。</p><p>© <span id="year"></span> <span id="footerName">好物入口</span></p></footer>
+<script>
+const STORAGE_KEY='goodies_catalog_v1';
+const fields=['name','category','price','reason','image_url','shopee_url','updated'];
+const demo=[
+{name:'示範｜扣環魔鬼氈綁帶',category:'運動戶外',price:'699',reason:'適合整理行李、線材或戶外裝備；購買前請確認尺寸與材質。',image_url:'',shopee_url:'',updated:'2026-10-27'},
+{name:'示範｜居家收納盒',category:'居家收納',price:'',reason:'適合整理抽屜與小物；請依實際空間挑選尺寸。',image_url:'',shopee_url:'',updated:''},
+{name:'示範｜廚房保鮮收納',category:'廚房餐桌',price:'',reason:'日常廚房收納方向的候選商品；請確認材質、容量與清潔方式。',image_url:'',shopee_url:'',updated:''},
+{name:'示範｜寵物外出用品',category:'寵物用品',price:'',reason:'外出用品挑選示例；請依寵物體型與安全需求確認規格。',image_url:'',shopee_url:'',updated:''}
+];
+let products=loadProducts();let selected='全部';
+function loadProducts(){try{const x=JSON.parse(localStorage.getItem(STORAGE_KEY));return Array.isArray(x)?x:demo.slice()}catch(e){return demo.slice()}}
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(products))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function categories(){return ['全部',...new Set(products.map(p=>p.category).filter(Boolean))]}
+function renderCategories(){document.getElementById('categories').innerHTML=categories().map(c=>`<button class="chip ${c===selected?'active':''}" data-cat="${esc(c)}">${esc(c)}${c==='全部'?'':'　'}</button>`).join('');document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{selected=b.dataset.cat;render()})}
+function render(){renderCategories();const q=document.getElementById('search').value.trim().toLowerCase();const list=products.filter(p=>(selected==='全部'||p.category===selected)&&[p.name,p.category,p.reason].some(v=>String(v||'').toLowerCase().includes(q)));document.getElementById('count').textContent=`${list.length} / ${products.length} 件商品`;document.getElementById('grid').innerHTML=list.length?list.map(p=>{const link=safeUrl(p.shopee_url),img=safeUrl(p.image_url);return `<article class="card"><div class="photo">${img?`<img src="${esc(img)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:'<div class="placeholder">✳</div>'}</div><div class="card-body"><div class="tag">${esc(p.category||'精選好物')}</div><h3>${esc(p.name||'未命名商品')}</h3><p class="reason">${esc(p.reason||'尚未填寫推薦理由。')}</p><div class="price">${p.price?`NT$ ${esc(p.price)}`:'價格請見商品頁'} <small>參考價</small></div><a class="btn ${link?'':'disabled'}" ${link?`href="${esc(link)}" target="_blank" rel="noopener noreferrer sponsored"`:'aria-disabled="true" title="請先在管理商品中填入商品網址"'}>${link?'前往蝦皮查看商品':'尚未設定商品連結'} <span>↗</span></a><p class="fine">${p.updated?'資料更新：'+esc(p.updated):'價格及庫存以商品頁為準'}</p></div></article>`}).join(''):'<div class="empty">找不到符合條件的商品，試試其他關鍵字或分類。</div>'}
+function safeUrl(v){try{const u=new URL(String(v||''));return ['https:','http:'].includes(u.protocol)?u.href:''}catch(e){return ''}}
+function csvParse(text){const rows=[];let row=[],val='',quoted=false;for(let i=0;i<text.length;i++){let c=text[i];if(c==='"'&&quoted&&text[i+1]==='"'){val+='"';i++}else if(c==='"'){quoted=!quoted}else if(c===','&&!quoted){row.push(val);val=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(val);if(row.some(x=>x.trim()))rows.push(row);row=[];val=''}else val+=c}row.push(val);if(row.some(x=>x.trim()))rows.push(row);if(rows.length<2)return [];const head=rows.shift().map(x=>x.trim());return rows.map(r=>Object.fromEntries(fields.map(f=>[f,((r[head.indexOf(f)]||'').trim())]))).filter(p=>p.name)}
+function csvEscape(v){let s=String(v??'');return /[",\r\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s}
+function toCsv(arr){return [fields.join(','),...arr.map(p=>fields.map(f=>csvEscape(p[f])).join(','))].join('\r\n')}
+function download(name,content,type='text/csv;charset=utf-8'){const blob=new Blob(['\ufeff',content],{type}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href)}
+function importCsv(t){const incoming=csvParse(t);if(!incoming.length){status('沒有讀到商品。請確認 CSV 第一列含有欄位名稱，且至少有一筆 name。');return}const map=new Map(products.map(p=>[p.name.toLowerCase(),p]));incoming.forEach(p=>map.set(p.name.toLowerCase(),{...map.get(p.name.toLowerCase()),...p}));products=[...map.values()].slice(0,1000);save();render();status(`已匯入 ${incoming.length} 筆；目前保留 ${products.length} 筆（上限 1,000 筆）。`)}
+function status(s){document.getElementById('adminStatus').textContent=s}
+document.getElementById('search').addEventListener('input',render);
+document.getElementById('csvFile').addEventListener('change',e=>{const f=e.target.files[0];if(f){const r=new FileReader();r.onload=()=>importCsv(r.result);r.readAsText(f,'UTF-8')}e.target.value=''});
+document.getElementById('importTextBtn').onclick=()=>importCsv(document.getElementById('csvText').value);
+document.getElementById('exportBtn').onclick=()=>download('goodies-products.csv',toCsv(products));
+document.getElementById('downloadTemplateBtn').onclick=()=>download('goodies-template.csv',fields.join(',')+'\r\n');
+document.getElementById('resetBtn').onclick=()=>{if(confirm('確定還原示範資料？目前本機清單會被取代。')){products=demo.slice();save();selected='全部';render();status('已還原示範資料。')}};
+document.getElementById('year').textContent=new Date().getFullYear();render();
+</script>
+</body></html>
